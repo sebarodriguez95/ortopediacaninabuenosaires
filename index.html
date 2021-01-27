@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h2 class="logo"></h2>
+    <div class="toggle"></div>
+  </header>
+<body>
+     <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  
+  <section class="showcase">
+
+    <video src="explore.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>SOMOS ORTOPEDIA </h2> 
+      <h3>CANINA BUENOS AIRES</h3>
+      <p>Somos Ortopedia Canina Buenos Aires, expertos en
+         prótesis y ortésis para perros.
+         Mas de 20 años de trayectoria y cientos de clientes felices
+         nos avalan.
+      </p>
+      <a href="#">Explorar</a>
+    </div>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/ortopediacaninabuenosaires"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="https://www.instagram.com/ortopediacaninabuenosaires/"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Nuestros servicios</a></li>
+      <li><a href="#">¿Quiénes somos?</a></li>
+      <li><a href="#">Contactanos</a></li>
+    </ul>
+  </div>
+  <script>
+ const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+  </script>
+</body>
+</html>
